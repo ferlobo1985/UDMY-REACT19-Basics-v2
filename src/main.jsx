@@ -7,7 +7,7 @@ const App = () => (
     <>
         <Header/>
         <div className='container'>
-            <StatePlayground/>
+            {/* <StatePlayground/> */}
         </div>
     </>
 )
