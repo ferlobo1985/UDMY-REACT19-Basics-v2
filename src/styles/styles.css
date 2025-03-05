@@ -75,4 +75,10 @@ nav {
  }
  
 
- 
+ .active {
+    background: red;
+ }
+
+ .not-active {
+    background: green;
+ }
