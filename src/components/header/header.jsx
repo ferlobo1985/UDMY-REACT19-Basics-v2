@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 const Header = (props) => {
     const [active,setActive] = useState('active');
-    const [keywords,setKeywords] = useState('');
+    // const [keywords,setKeywords] = useState('');
 
     const handleChange = (event) => {
         const value = event.target.value === '' ? 'active' : 'not-active';
@@ -18,7 +18,7 @@ const Header = (props) => {
             <input
                 onChange={props.getKeywords}
             />
-            The kewords are: {keywords}
+            {/* The kewords are: {keywords} */}
             <Navigation/>
         </header>
     )
