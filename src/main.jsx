@@ -13,7 +13,10 @@ const App = () => {
         <>
             <Header/>
             <div className='container'>
-                <NewsList news={news}/>
+                <NewsList news={news}>
+                    <br/>
+                    <h1>I am children</h1>
+                </NewsList>
             </div>
         </>
     )
