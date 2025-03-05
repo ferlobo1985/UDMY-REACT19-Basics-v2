@@ -1,8 +1,14 @@
+import NewsItem from "./news_list_item";
+
 const NewsList = (props) => {
-    console.log(props)
+
+    const news = props.news.map(item=>(
+        <NewsItem item={item} key={item.id}/>
+    ))
+
     return(
         <>
-            <div>New list:</div>
+            {news}
         </>
     )
 }
