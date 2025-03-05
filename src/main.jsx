@@ -9,9 +9,13 @@ import './styles/styles.css'
 const App = () => {
     let [news, setNews] = useState(newsData);
 
+    const getKeywords = (event) =>{
+        console.log(event.target.value)
+    }
+
     return(
         <>
-            <Header/>
+            <Header getKeywords={getKeywords}/>
             <div className='container'>
                 <NewsList news={news}>
                     <br/>
